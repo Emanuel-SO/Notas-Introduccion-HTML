@@ -1,0 +1,140 @@
+<!-- Shift+Alt+A es u comentario multilinea -->
+
+<!-- Para crear estructura básica se puede usar ! y Enter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"><!-- Que tipo de codificación utiliza la página -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Compatibilidad con navegadores obsoletos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Escala en la vista del documento (Esto no es responsive) -->
+    <title>Document</title>
+</head>
+<body>
+    <!-- Eqtiquetas de cabezera -->
+    <h1>Este es un h1</h1>
+    <h2>Este es un h2</h2>
+    <h3>Este es un h3</h3>
+    <h4>Este es un h4</h4>
+    <h5>Este es un h5</h5>
+    <h6>Este es un h6</h6>
+    <!--Comando emmet h${Este es un h$}*6 -->
+    <h1>Este es un h1</h1>
+    <h2>Este es un h2</h2>
+    <h3>Este es un h3</h3>
+    <h4>Este es un h4</h4>
+    <h5>Este es un h5</h5>
+    <h6>Este es un h6</h6>
+
+    <!--
+         Etiquetas para estilizar parrafos
+         em - italica (curiva)
+         u - underline (subrayado)
+         b - bold palabras (negritas palabras)
+         strong - bold parrafos (negritas parrafos) 
+         blockquote - citar
+         del - tachado
+     -->
+    <p style="color:brown">
+        <em> 
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora soluta beatae nisi perferendis. Minus, voluptate? Assumenda laborum fugiat tenetur id rem ut. Labore saepe blanditiis doloremque minus autem. Delectus, explicabo?
+        </em>
+    </p>
+    <p>
+        <u>
+            Lorem ipsum dolor sit amet <b>consectetur</b>, adipisicing elit. Tempora soluta beatae nisi perferendis. Minus, voluptate? Assumenda laborum fugiat tenetur id rem ut. Labore saepe blanditiis doloremque minus autem. Delectus, explicabo?
+        </u>
+    </p>
+    <p>
+        <strong>
+            <del>Lorem ipsum</del> dolor sit amet consectetur, adipisicing elit. Tempora soluta beatae nisi perferendis. Minus, voluptate? Assumenda laborum fugiat tenetur id rem ut. Labore saepe blanditiis doloremque minus autem. Delectus, explicabo?
+        </strong>
+    </p>
+    <p>
+        <blockquote>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora soluta beatae nisi perferendis. Minus, voluptate? Assumenda laborum fugiat tenetur id rem ut. Labore saepe blanditiis doloremque minus autem. Delectus, explicabo?
+        </blockquote>
+    </p>
+
+    <!-- 
+        Atributos de las etiquetas
+    
+        Los atributos son una serie de elementos que se pueden agregar a una
+        etiqueta en si para dotarla de más caracteristicas. (No todas las
+        etiquetas tienen atributos). Estos atributos nos permiten agregar 
+        elementos como estilos, identificadores, eventos, etc.
+
+        - class: Marca un conjunto de elemntos.
+        - id: Marca un elemnto unico.
+        - name: Marca el nombre de la etiqueta.
+    -->
+
+    <!-- Etiqueta de imagen (img)-->
+    <!-- https://tinypng.com/ Herramienta para tratamiento de las imagenes -->
+    <!--
+        La etiqueta img nos permite agregar una imagen en un documeto web.
+        Los formatos más utilizados son: jpge, png, gif, webp.
+        
+        Algunos de los atributos de la etiqueta son:
+        
+        - src (source): definir la ubicación del archivo.
+        - width: definir el ancho.
+        - height: definir el alto.
+        - alt: define la descripción de la imagen (para SEO y accesibilidad).
+    -->
+    <!-- agregar imagenes externas por URL -->
+    <img src="https://static.diariofemenino.com/pictures/fotos/173000/173721-4.jpg" alt="Este es un perrito sonrriente acostado de espaldas en la playa." width="300px">
+    <!-- Agregar imagen de forma interna, como archivo dentro del proyecto -->
+    <img src="/perrito_playero.jpg" alt="Este es un perrito sonrriente acostado de espaldas en la playa." width="19%">
+
+    <!-- Etiquetas de enlace
+        Permiten la navegación por medio de hipervinculos (links) que realizan la conexión y referencias a otros archivos o páginas web,
+        ya sea dentro de la misma aplicación o de forma externa.
+
+        atributos de la etiqueta
+
+        - href: sirve para definir la ubicación del elemento a donde nos vamos
+        a enlazar.
+        - target: define como se abre ese elemento.
+            * misma ventana.
+            * ventana adicional.
+
+    -->
+    <!-- 
+
+        src (source): incrustar un recurso (pegamos en el documento)
+        href (referencia): existe un enlace que nos comunica a ese elemento, pero que no necesariamente incrusta el elemento.
+
+    -->
+
+    <br>
+    <a href="https:\\www.google.com" target="" title="Link a Google">Esta etiqueta lleva a Google</a>
+    <br>
+    <br>
+    <a href="/Aleacion de Ley Ed revisada - Brandon Sanderson.pdf" target="_blank">libro</a>
+
+    <!-- Etiquetas para listas ordenadas y desordenadas.
+    
+        etiqueta ol - lista ordenada
+        etiqueta ul - lista desordenada
+        etiqueta li - elemtos de listas
+    -->
+
+    <h3>Lista Ordenada de Taquitos</h3>
+    <ol>
+        <!-- li{Elemeto de lista}*3 -->
+        <li>Taquitos de chicharron</li>
+        <li>Taquitos de adobada</li>
+        <li>Taquitos de alambre</li>
+        <li>Taquitos de frijoles</li>
+    </ol>
+
+    <h3>Lista Desordenada de pendientes</h3>
+    <ul style="list-style-type: georgian;">
+        <li>Lavar los platos</li>
+        <li>Dormir</li>
+        <li>Jugar LoL</li>
+        <li>Comer</li>
+    </ul>
+
+</body>
+</html>
